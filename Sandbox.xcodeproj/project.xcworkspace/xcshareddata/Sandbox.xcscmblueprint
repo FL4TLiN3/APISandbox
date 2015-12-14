@@ -1,0 +1,43 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : 0,
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : 0,
+    "F607A624BDF2624F7609EF66C123E17132AFE18F" : 0,
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D7B99984-439B-4771-B0EF-7DF500E51852",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : "Sandbox\/Carthage\/Checkouts\/Result\/",
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : "Sandbox\/Carthage\/Checkouts\/ObjectMapper\/",
+    "F607A624BDF2624F7609EF66C123E17132AFE18F" : "Sandbox\/Carthage\/Checkouts\/APIKit\/",
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : "Sandbox\/Carthage\/Checkouts\/APIKit\/Carthage\/Checkouts\/OHHTTPStubs\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Sandbox",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sandbox.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Hearst-DD\/ObjectMapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "956D2B21DD155C49504BB67697A67F7C5351A353"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AliSoftware\/OHHTTPStubs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ishkawa\/APIKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F607A624BDF2624F7609EF66C123E17132AFE18F"
+    }
+  ]
+}

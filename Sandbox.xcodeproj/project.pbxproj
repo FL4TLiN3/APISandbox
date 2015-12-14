@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24A07F511C1EBABE002B9C61 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07F4E1C1EBABE002B9C61 /* APIKit.framework */; };
-		24A07F521C1EBABE002B9C61 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07F4F1C1EBABE002B9C61 /* ObjectMapper.framework */; };
-		24A07F531C1EBABE002B9C61 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07F501C1EBABE002B9C61 /* Result.framework */; };
+		24A07F561C1EBBDE002B9C61 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A07F551C1EBBDE002B9C61 /* Article.swift */; };
+		24A07F591C1EBEE5002B9C61 /* QiitaRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A07F581C1EBEE5002B9C61 /* QiitaRequestType.swift */; };
 		24ECCC891C1EB8D4009B1FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCC881C1EB8D4009B1FD0 /* AppDelegate.swift */; };
 		24ECCC8B1C1EB8D4009B1FD0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCC8A1C1EB8D4009B1FD0 /* FirstViewController.swift */; };
 		24ECCC8D1C1EB8D4009B1FD0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCC8C1C1EB8D4009B1FD0 /* SecondViewController.swift */; };
@@ -38,9 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24A07F4E1C1EBABE002B9C61 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
-		24A07F4F1C1EBABE002B9C61 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		24A07F501C1EBABE002B9C61 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		24A07F551C1EBBDE002B9C61 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		24A07F581C1EBEE5002B9C61 /* QiitaRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaRequestType.swift; sourceTree = "<group>"; };
 		24ECCC851C1EB8D4009B1FD0 /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ECCC881C1EB8D4009B1FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24ECCC8A1C1EB8D4009B1FD0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -62,9 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A07F511C1EBABE002B9C61 /* APIKit.framework in Frameworks */,
-				24A07F521C1EBABE002B9C61 /* ObjectMapper.framework in Frameworks */,
-				24A07F531C1EBABE002B9C61 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +80,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A07F541C1EBBBE002B9C61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24A07F551C1EBBDE002B9C61 /* Article.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		24A07F571C1EBEAD002B9C61 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				24A07F581C1EBEE5002B9C61 /* QiitaRequestType.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		24ECCC7C1C1EB8D4009B1FD0 = {
 			isa = PBXGroup;
 			children = (
-				24A07F4E1C1EBABE002B9C61 /* APIKit.framework */,
-				24A07F4F1C1EBABE002B9C61 /* ObjectMapper.framework */,
-				24A07F501C1EBABE002B9C61 /* Result.framework */,
 				24ECCC871C1EB8D4009B1FD0 /* Sandbox */,
 				24ECCC9E1C1EB8D4009B1FD0 /* SandboxTests */,
 				24ECCCA91C1EB8D4009B1FD0 /* SandboxUITests */,
@@ -111,6 +119,8 @@
 		24ECCC871C1EB8D4009B1FD0 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				24A07F571C1EBEAD002B9C61 /* Services */,
+				24A07F541C1EBBBE002B9C61 /* Models */,
 				24ECCC881C1EB8D4009B1FD0 /* AppDelegate.swift */,
 				24ECCC8A1C1EB8D4009B1FD0 /* FirstViewController.swift */,
 				24ECCC8C1C1EB8D4009B1FD0 /* SecondViewController.swift */,
@@ -271,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A07F561C1EBBDE002B9C61 /* Article.swift in Sources */,
 				24ECCC8D1C1EB8D4009B1FD0 /* SecondViewController.swift in Sources */,
 				24ECCC891C1EB8D4009B1FD0 /* AppDelegate.swift in Sources */,
+				24A07F591C1EBEE5002B9C61 /* QiitaRequestType.swift in Sources */,
 				24ECCC8B1C1EB8D4009B1FD0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
