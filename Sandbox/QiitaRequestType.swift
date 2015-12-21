@@ -7,29 +7,33 @@
 //
 
 import Foundation
+import APIKit
+import ObjectMapper
+
+enum QiitaAPIClientError: ErrorType {
+    case APIKeyNotDefined
+    case AuthenticationFailure
+}
 
 public protocol QiitaRequestType: RequestType {
     var apiKey: String? { get set }
 }
 
 public extension QiitaRequestType where Self.Response: Mappable {
+    
     public var method: HTTPMethod {
         return .GET
     }
     
     public var baseURL: NSURL {
-        return NSURL(string: "https://wakatime.com/api/v1/")!
+        return NSURL(string: "http://qiita.com/api/v2/")!
     }
     
     public func configureURLRequest(URLRequest: NSMutableURLRequest) throws -> NSMutableURLRequest {
         guard let apiKey = self.apiKey else {
-            throw WakaTimeAPIClientError.APIKeyNotDefined
+            throw QiitaAPIClientError.APIKeyNotDefined
         }
-        guard let data = apiKey.dataUsingEncoding(NSUTF8StringEncoding) else {
-            throw WakaTimeAPIClientError.AuthenticationFailure
-        }
-        let encryptedKey = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
-        URLRequest.setValue("Basic \(encryptedKey)", forHTTPHeaderField: "Authorization")
+        URLRequest.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         return URLRequest
     }
     
@@ -47,5 +51,15 @@ public extension QiitaRequestType where Self.Response: Mappable {
             return nil
         }
         return object
+    }
+}
+
+public struct ItemsRequest: QiitaRequestType {
+    
+    // Statを取得するAPI
+    public typealias Response = Article
+    public var apiKey: String? = "fb3778dbf21bd306f49e1c56c97ab4a1977b5e2c"
+    public var path: String {
+        return "/items/"
     }
 }

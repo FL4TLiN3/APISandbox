@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		24A07F561C1EBBDE002B9C61 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A07F551C1EBBDE002B9C61 /* Article.swift */; };
 		24A07F591C1EBEE5002B9C61 /* QiitaRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A07F581C1EBEE5002B9C61 /* QiitaRequestType.swift */; };
+		24A07F741C1EC7C4002B9C61 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07F711C1EC7C4002B9C61 /* APIKit.framework */; };
+		24A07F751C1EC7C4002B9C61 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07F721C1EC7C4002B9C61 /* ObjectMapper.framework */; };
+		24A07F761C1EC7C4002B9C61 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07F731C1EC7C4002B9C61 /* Result.framework */; };
+		24D5E7FB1C1ED72E009F22BB /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24A07F711C1EC7C4002B9C61 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E7FC1C1ED72E009F22BB /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24A07F721C1EC7C4002B9C61 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E7FD1C1ED72E009F22BB /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24A07F731C1EC7C4002B9C61 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E7FF1C2049B6009F22BB /* QiitaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5E7FE1C2049B6009F22BB /* QiitaAPIClient.swift */; };
+		24D5E8051C205C77009F22BB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5E8001C205C77009F22BB /* Alamofire.framework */; };
+		24D5E8061C205C77009F22BB /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5E8011C205C77009F22BB /* RxBlocking.framework */; };
+		24D5E8071C205C77009F22BB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5E8021C205C77009F22BB /* RxCocoa.framework */; };
+		24D5E8081C205C77009F22BB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5E8031C205C77009F22BB /* RxSwift.framework */; };
+		24D5E8091C205C77009F22BB /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5E8041C205C77009F22BB /* WebImage.framework */; };
+		24D5E80F1C205CB2009F22BB /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24D5E80A1C205CB2009F22BB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E8101C205CB2009F22BB /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24D5E80B1C205CB2009F22BB /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E8111C205CB2009F22BB /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24D5E80C1C205CB2009F22BB /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E8121C205CB2009F22BB /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24D5E80D1C205CB2009F22BB /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24D5E8131C205CB2009F22BB /* WebImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24D5E80E1C205CB2009F22BB /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24ECCC891C1EB8D4009B1FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCC881C1EB8D4009B1FD0 /* AppDelegate.swift */; };
 		24ECCC8B1C1EB8D4009B1FD0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCC8A1C1EB8D4009B1FD0 /* FirstViewController.swift */; };
 		24ECCC8D1C1EB8D4009B1FD0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECCC8C1C1EB8D4009B1FD0 /* SecondViewController.swift */; };
@@ -36,9 +53,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		24D5E7FA1C1ED71D009F22BB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				24D5E80F1C205CB2009F22BB /* Alamofire.framework in CopyFiles */,
+				24D5E8101C205CB2009F22BB /* RxBlocking.framework in CopyFiles */,
+				24D5E8111C205CB2009F22BB /* RxCocoa.framework in CopyFiles */,
+				24D5E8121C205CB2009F22BB /* RxSwift.framework in CopyFiles */,
+				24D5E8131C205CB2009F22BB /* WebImage.framework in CopyFiles */,
+				24D5E7FB1C1ED72E009F22BB /* APIKit.framework in CopyFiles */,
+				24D5E7FC1C1ED72E009F22BB /* ObjectMapper.framework in CopyFiles */,
+				24D5E7FD1C1ED72E009F22BB /* Result.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		24A07F551C1EBBDE002B9C61 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		24A07F581C1EBEE5002B9C61 /* QiitaRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaRequestType.swift; sourceTree = "<group>"; };
+		24A07F711C1EC7C4002B9C61 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		24A07F721C1EC7C4002B9C61 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		24A07F731C1EC7C4002B9C61 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		24D5E7FE1C2049B6009F22BB /* QiitaAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaAPIClient.swift; sourceTree = "<group>"; };
+		24D5E8001C205C77009F22BB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		24D5E8011C205C77009F22BB /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		24D5E8021C205C77009F22BB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		24D5E8031C205C77009F22BB /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		24D5E8041C205C77009F22BB /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		24D5E80A1C205CB2009F22BB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		24D5E80B1C205CB2009F22BB /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		24D5E80C1C205CB2009F22BB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		24D5E80D1C205CB2009F22BB /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		24D5E80E1C205CB2009F22BB /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		24ECCC851C1EB8D4009B1FD0 /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ECCC881C1EB8D4009B1FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24ECCC8A1C1EB8D4009B1FD0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +111,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D5E8051C205C77009F22BB /* Alamofire.framework in Frameworks */,
+				24D5E8061C205C77009F22BB /* RxBlocking.framework in Frameworks */,
+				24D5E8071C205C77009F22BB /* RxCocoa.framework in Frameworks */,
+				24D5E8081C205C77009F22BB /* RxSwift.framework in Frameworks */,
+				24D5E8091C205C77009F22BB /* WebImage.framework in Frameworks */,
+				24A07F741C1EC7C4002B9C61 /* APIKit.framework in Frameworks */,
+				24A07F751C1EC7C4002B9C61 /* ObjectMapper.framework in Frameworks */,
+				24A07F761C1EC7C4002B9C61 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				24A07F581C1EBEE5002B9C61 /* QiitaRequestType.swift */,
+				24D5E7FE1C2049B6009F22BB /* QiitaAPIClient.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -99,6 +159,19 @@
 		24ECCC7C1C1EB8D4009B1FD0 = {
 			isa = PBXGroup;
 			children = (
+				24D5E80A1C205CB2009F22BB /* Alamofire.framework */,
+				24D5E80B1C205CB2009F22BB /* RxBlocking.framework */,
+				24D5E80C1C205CB2009F22BB /* RxCocoa.framework */,
+				24D5E80D1C205CB2009F22BB /* RxSwift.framework */,
+				24D5E80E1C205CB2009F22BB /* WebImage.framework */,
+				24D5E8001C205C77009F22BB /* Alamofire.framework */,
+				24D5E8011C205C77009F22BB /* RxBlocking.framework */,
+				24D5E8021C205C77009F22BB /* RxCocoa.framework */,
+				24D5E8031C205C77009F22BB /* RxSwift.framework */,
+				24D5E8041C205C77009F22BB /* WebImage.framework */,
+				24A07F711C1EC7C4002B9C61 /* APIKit.framework */,
+				24A07F721C1EC7C4002B9C61 /* ObjectMapper.framework */,
+				24A07F731C1EC7C4002B9C61 /* Result.framework */,
 				24ECCC871C1EB8D4009B1FD0 /* Sandbox */,
 				24ECCC9E1C1EB8D4009B1FD0 /* SandboxTests */,
 				24ECCCA91C1EB8D4009B1FD0 /* SandboxUITests */,
@@ -160,6 +233,7 @@
 				24ECCC811C1EB8D4009B1FD0 /* Sources */,
 				24ECCC821C1EB8D4009B1FD0 /* Frameworks */,
 				24ECCC831C1EB8D4009B1FD0 /* Resources */,
+				24D5E7FA1C1ED71D009F22BB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -281,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D5E7FF1C2049B6009F22BB /* QiitaAPIClient.swift in Sources */,
 				24A07F561C1EBBDE002B9C61 /* Article.swift in Sources */,
 				24ECCC8D1C1EB8D4009B1FD0 /* SecondViewController.swift in Sources */,
 				24ECCC891C1EB8D4009B1FD0 /* AppDelegate.swift in Sources */,
